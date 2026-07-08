@@ -1,0 +1,41 @@
+# ── Site ──────────────────────────────────────────────
+title: Jump Higher Design
+tagline: Consultoría digital para PyMEs mexicanas
+description: >-
+  Consultoría digital para PyMEs mexicanas: sitios web profesionales,
+  plataformas Odoo e identidad visual. Alcance fijo, precios claros, sin tecnicismos.
+url: "https://jumphigherdesign.com"
+lang: es-MX
+locale: es_MX
+
+# ── Business / contact (edit these in one place) ──────
+email: info@jumphigherdesign.com
+whatsapp: "5215561472118"            # 52 + 1 + 10 dígitos (WhatsApp MX)
+whatsapp_msg: "Hola, vi su sitio y me gustaría más información sobre sus servicios."
+
+# ── Build ─────────────────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-include-cache
+
+sass:
+  style: compressed                 # outputs minified assets/css/main.css
+
+# Every page gets the default layout unless it overrides.
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LAUNCH_PLAN.md
+  - netlify.toml
+  - vendor
+  - node_modules
+  - assets/favicon.old

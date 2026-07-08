@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Jump Higher Design</div>
+        <div class="footer__slogan">"Lleva tu negocio más alto."</div>
+        <p class="footer__desc">Consultoría digital para pequeñas y medianas empresas en México. Sitios web, Odoo e identidad visual.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Servicios</div>
+        <ul class="footer__links">
+          <li><a href="{{ '/servicios/' | relative_url }}">Sitio estático</a></li>
+          <li><a href="{{ '/servicios/' | relative_url }}">Sitio con Odoo</a></li>
+          <li><a href="{{ '/servicios/' | relative_url }}">Identidad visual</a></li>
+          <li><a href="{{ '/servicios/' | relative_url }}">Mantenimiento</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <ul class="footer__links">
+          <li><a href="{{ '/acerca/' | relative_url }}">Acerca de</a></li>
+          <li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <ul class="footer__links">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="https://wa.me/{{ site.whatsapp }}?text={{ site.whatsapp_msg | url_encode }}">WhatsApp</a></li>
+          <li><a href="{{ site.url }}">jumphigherdesign.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© {{ 'now' | date: "%Y" }} Jump Higher Design. Todos los derechos reservados.</span>
+      <div class="footer__bl">
+        <a href="{{ '/aviso-de-privacidad/' | relative_url }}">Aviso de privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,17 @@
+{%- comment -%}
+  Param: tiers (list from _data/services.yml).
+  All tiers render with the same card style so every option reads as valid.
+  The featured tier gets a border + explicit "Más popular" flag (never color alone).
+{%- endcomment -%}
+{%- for t in include.tiers -%}
+<div class="pc{% if t.featured %} pc--ft{% endif %}">
+  {% if t.featured %}<span class="pc-flag">Más popular</span>{% endif %}
+  <span class="pc-badge pc-badge--{{ t.badge }}">{{ t.name }}</span>
+  <div class="price">{{ t.price }}</div>
+  <div class="price-note">{{ t.note }}</div>
+  {% if t.scope %}<h4>{{ t.scope }}</h4>{% endif %}
+  <ul class="pc-features">
+    {% for f in t.features %}<li class="pf">{{ f }}</li>{% endfor %}
+  </ul>
+</div>
+{%- endfor -%}

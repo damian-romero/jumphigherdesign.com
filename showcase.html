@@ -1,0 +1,91 @@
+---
+# UNPUBLISHED until there is real client work to show (decision: 2026-07-06).
+# To publish: set published: true, re-add the nav entry in _data/nav.yml,
+# restore the footer link, and uncomment the preview section in index.html.
+published: false
+permalink: /showcase/
+title: "Showcase"
+description: "Ejemplos del tipo de soluciones que construimos. Compara la misma empresa como sitio estático y con Odoo."
+---
+
+{%- comment -%}
+  HONESTY FLAG (read README): there is no real portfolio yet. The cards below are
+  ILLUSTRATIVE placeholders, not delivered client work. Copy was changed from the
+  mockup's "ejemplos reales" to "el tipo de soluciones que construimos" to avoid a
+  false claim (brand value: Honestidad). Decide one of:
+    (a) keep as clearly-illustrative concepts (current), or
+    (b) hold this page until you have real work — remove the Showcase line from
+        _data/nav.yml and the preview section on index.html.
+{%- endcomment -%}
+
+{% include page-hero.html eyebrow="Showcase" title="El tipo de soluciones que construimos" lead="Estos son ejemplos ilustrativos por tipo de negocio. Filtra por plataforma y compara la misma empresa construida como sitio estático y con Odoo." %}
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="fbtn active" data-filter="all">Todos</button>
+      <button class="fbtn" data-filter="static">Estáticos</button>
+      <button class="fbtn" data-filter="odoo">Odoo</button>
+    </div>
+    <div class="grid-3" id="sc-grid">
+      <div class="sc-card" data-t="static">
+        <div class="sc-preview" style="background:var(--mar)"><div class="sc-nav" style="background:var(--piz)"><div class="sc-dot" style="background:var(--ter)"></div><div class="sc-dot" style="background:var(--sal)"></div></div><div class="sc-body"><div class="sc-hero" style="background:var(--ter);opacity:.22"></div><div class="sc-ln" style="background:var(--bdr);width:80%"></div><div class="sc-ln" style="background:var(--bdr);width:55%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Despacho de abogados</h4><p>Landing, servicios, formulario de contacto. Diseño corporativo personalizado.</p></div>
+      </div>
+      <div class="sc-card" data-t="odoo">
+        <div class="sc-preview" style="background:var(--piz)"><div class="sc-nav" style="background:rgba(255,255,255,.05)"><div class="sc-dot" style="background:var(--ter-lt)"></div><div class="sc-dot" style="background:var(--sal)"></div></div><div class="sc-body"><div class="sc-hero" style="background:rgba(196,120,90,.35)"></div><div class="sc-ln" style="background:rgba(255,255,255,.12);width:80%"></div><div class="sc-ln" style="background:rgba(255,255,255,.08);width:60%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-odoo">Odoo</span><h4>Tienda de ropa en línea</h4><p>Catálogo, carrito, pagos y gestión de pedidos integrados.</p></div>
+      </div>
+      <div class="sc-card" data-t="static">
+        <div class="sc-preview" style="background:#12141c"><div class="sc-nav" style="background:rgba(255,255,255,.04)"><div class="sc-dot" style="background:var(--sal)"></div><div class="sc-dot" style="background:var(--ter)"></div></div><div class="sc-body"><div class="sc-hero" style="background:var(--sal);opacity:.25"></div><div class="sc-ln" style="background:rgba(255,255,255,.12);width:75%"></div><div class="sc-ln" style="background:rgba(255,255,255,.08);width:50%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Agencia creativa</h4><p>Portafolio visual, galería, blog y Calendly integrado.</p></div>
+      </div>
+      <div class="sc-card" data-t="odoo">
+        <div class="sc-preview" style="background:var(--mar-dk)"><div class="sc-nav" style="background:var(--sal)"><div class="sc-dot" style="background:rgba(255,255,255,.5)"></div></div><div class="sc-body"><div class="sc-hero" style="background:var(--sal);opacity:.22"></div><div class="sc-ln" style="background:var(--bdr);width:80%"></div><div class="sc-ln" style="background:var(--bdr);width:60%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-odoo">Odoo</span><h4>Distribuidora con inventario</h4><p>Sitio + CRM + control de stock. Pedidos y cotizaciones en línea.</p></div>
+      </div>
+      <div class="sc-card" data-t="static">
+        <div class="sc-preview" style="background:#fdf6ee"><div class="sc-nav" style="background:var(--ter)"><div class="sc-dot" style="background:rgba(255,255,255,.5)"></div></div><div class="sc-body"><div class="sc-hero" style="background:var(--ter);opacity:.18"></div><div class="sc-ln" style="background:var(--bdr);width:75%"></div><div class="sc-ln" style="background:var(--bdr);width:45%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Restaurante local</h4><p>Menú, galería, mapa y reservas por WhatsApp.</p></div>
+      </div>
+      <div class="sc-card" data-t="static">
+        <div class="sc-preview" style="background:var(--piz)"><div class="sc-nav" style="background:rgba(255,255,255,.04)"><div class="sc-dot" style="background:var(--ter-lt)"></div></div><div class="sc-body"><div class="sc-hero" style="background:rgba(125,155,118,.3)"></div><div class="sc-ln" style="background:rgba(255,255,255,.12);width:80%"></div><div class="sc-ln" style="background:rgba(255,255,255,.08);width:60%"></div></div></div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Página de estatus (Upptime)</h4><p>Monitoreo en tiempo real de servicios digitales.</p></div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="sh">
+      <span class="eyebrow">Comparación</span>
+      <h2>El mismo negocio. Dos soluciones.</h2>
+      <p>Una consultora de recursos humanos construida de dos formas distintas. Estas no son etapas de un camino — son decisiones permanentes.</p>
+    </div>
+    <div class="compare">
+      <div class="cmp-col cmp-col--lt">
+        <div class="cmp-lbl">Sitio estático</div>
+        <h4>Consultora RH — sitio estático</h4>
+        <div class="cmp-mini" style="background:var(--mar-dk)"><div class="cmp-mini-bar" style="background:var(--piz)"></div><div class="cmp-mini-body"><div style="height:4px;border-radius:2px;background:var(--bdr)"></div><div style="height:4px;border-radius:2px;background:var(--bdr);width:60%"></div></div></div>
+        <div class="cmp-feat">Diseño totalmente personalizado</div>
+        <div class="cmp-feat">Formulario de contacto con WhatsApp</div>
+        <div class="cmp-feat">Integración con Calendly para citas</div>
+        <div class="cmp-feat">Blog con artículos de RRHH</div>
+        <div class="cmp-feat">Hosting gratuito — costo mínimo</div>
+        <div class="cmp-verdict"><strong>Ideal si...</strong>No necesitas CRM ni seguimiento automatizado de candidatos. Tu volumen es manejable de forma manual.</div>
+      </div>
+      <div class="cmp-col cmp-col--dk">
+        <div class="cmp-lbl">Sitio con Odoo</div>
+        <h4>Consultora RH — con Odoo</h4>
+        <div class="cmp-mini" style="background:var(--piz-lt)"><div class="cmp-mini-bar" style="background:var(--ter)"></div><div class="cmp-mini-body"><div style="height:4px;border-radius:2px;background:rgba(255,255,255,.15)"></div><div style="height:4px;border-radius:2px;background:rgba(255,255,255,.1);width:60%"></div></div></div>
+        <div class="cmp-feat">Sitio integrado con CRM activo</div>
+        <div class="cmp-feat">Seguimiento de candidatos y clientes</div>
+        <div class="cmp-feat">Email marketing a empresas cliente</div>
+        <div class="cmp-feat">Cotizaciones y facturación integradas</div>
+        <div class="cmp-feat">El equipo edita contenido sin técnico</div>
+        <div class="cmp-verdict"><strong>Ideal si...</strong>Tienes múltiples candidatos y clientes activos que necesitas gestionar en un solo lugar con tu equipo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include cta-banner.html title="¿Ya sabes lo que necesitas?" text="Escríbenos y cotizamos en menos de 48 horas hábiles." btn_label="Solicitar cotización →" btn_href="/contacto/" %}

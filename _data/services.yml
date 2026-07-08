@@ -1,0 +1,131 @@
+# ─────────────────────────────────────────────────────────────
+# PRICING — single source of truth. Edit prices/scope/features here.
+# Prices match the business plan v2.7 (branding ladder FINAL 2026-07-06:
+# $2,500 / $5,500 / $9,500 / $14,000 — reparto Fede 75% / JHD 25%).
+# ─────────────────────────────────────────────────────────────
+
+static_pricing:
+  - name: Básico
+    badge: std
+    price: "$5,500 MXN"
+    note: "+ IVA · pago único"
+    scope: "Hasta 3 páginas"
+    features:
+      - Diseño personalizado completo
+      - 3 rondas de revisión
+      - SEO básico incluido
+      - Formulario de contacto
+      - 15 días soporte post-entrega
+  - name: Estándar
+    badge: ft
+    featured: true
+    price: "$9,500 MXN"
+    note: "+ IVA · pago único"
+    scope: "Hasta 6 páginas"
+    features:
+      - Todo lo del básico
+      - 5 rondas de revisión
+      - Redacción de contenido básico
+      - 1 integración externa incluida
+      - 30 días soporte post-entrega
+  - name: Páginas extra
+    badge: cst
+    price: "$800 MXN"
+    note: "+ IVA · por página adicional"
+    scope: "Más de 6 páginas"
+    features:
+      - Sin tier personalizado
+      - Precio siempre predecible
+      - Aprobación escrita previa
+
+odoo_pricing:
+  - name: Básico
+    badge: std
+    price: "$7,500 MXN"
+    note: "+ IVA · pago único"
+    scope: "Hasta 3 páginas"
+    features:
+      - Configuración de cuenta Odoo
+      - 3 rondas de revisión
+      - SEO básico
+      - 1 sesión de capacitación
+      - 15 días soporte post-entrega
+  - name: Estándar
+    badge: ft
+    featured: true
+    price: "$11,000 MXN"
+    note: "+ IVA · pago único"
+    scope: "Hasta 6 páginas"
+    features:
+      - Todo lo del básico
+      - Hasta 2 módulos Odoo incluidos
+      - 5 rondas de revisión
+      - 2 sesiones de capacitación
+      - 30 días soporte post-entrega
+  - name: A medida
+    badge: cst
+    price: "Cotización"
+    note: "según alcance del proyecto"
+    scope: "Proyectos avanzados"
+    features:
+      - Múltiples módulos Odoo
+      - Tienda completa con inventario
+      - Propuesta detallada previa
+
+# Branding ladder FINAL (2026-07-06, acordada con Fede — reparto 75/25).
+branding_pricing:
+  - name: Básico
+    badge: std
+    price: "$2,500 MXN"
+    note: "+ IVA · pago único"
+    features:
+      - Logotipo + favicon
+      - 2 rondas de revisión
+      - Formatos AI, SVG, PNG, PDF
+  - name: Completo
+    badge: ft
+    featured: true
+    price: "$5,500 MXN"
+    note: "+ IVA · pago único"
+    features:
+      - Logotipo + favicon
+      - Paleta de color y tipografía
+      - Guía básica de marca
+      - 3 rondas de revisión
+  - name: Avanzado
+    badge: cst
+    price: "$9,500 MXN"
+    note: "+ IVA · pago único"
+    features:
+      - Todo lo del Completo
+      - Manual de marca extendido
+      - Banners web y de firma de correo
+      - 5 rondas de revisión
+  - name: Premium
+    badge: prem
+    price: "$14,000 MXN"
+    note: "+ IVA · pago único"
+    features:
+      - Todo lo del Avanzado
+      - Paleta para dark mode
+      - "Papelería: tarjeta, membrete y sobre"
+      - 5 rondas de revisión
+
+# Mantenimiento: dos caminos (autonomía primero). Precios del rate card v2.7.
+maintenance_paths:
+  - name: Hazlo tú mismo
+    badge: std
+    price: "$1,500 MXN"
+    note: "+ IVA · 2 sesiones de capacitación"
+    features:
+      - Te enseñamos a actualizar contenido y publicar cambios
+      - Guía escrita de referencia para tu sitio
+      - Sin mensualidades — tu sitio queda en tus manos
+  - name: Lo manejamos por ti
+    badge: ft
+    price: "Desde $500 MXN"
+    note: "+ IVA · al mes, según alcance"
+    features:
+      - Actualizaciones de contenido a solicitud
+      - Monitoreo y respaldos del sitio
+      - Alcance y precio fijos por escrito, sin plazos forzosos

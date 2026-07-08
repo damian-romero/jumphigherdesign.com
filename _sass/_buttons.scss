@@ -1,0 +1,10 @@
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.5rem;border-radius:var(--rad);font-size:.88rem;font-weight:500;border:1.5px solid transparent;transition:all .18s;white-space:nowrap}
+.btn-primary{background:var(--ter-tx);color:var(--wht);border-color:var(--ter-tx)}
+.btn-primary:hover{background:#8A4A2E;border-color:#8A4A2E}
+.btn-outline{background:transparent;color:var(--wht);border-color:rgba(255,255,255,.35)}
+.btn-outline:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.07)}
+.btn-ghost{background:transparent;color:var(--piz);border-color:var(--bdr)}
+.btn-ghost:hover{border-color:var(--piz);background:var(--mar-dk)}
+.btn-white{background:var(--wht);color:var(--ter-tx);border-color:var(--wht)}
+.btn-white:hover{opacity:.92}
+.btn-group{display:flex;gap:.75rem;flex-wrap:wrap}

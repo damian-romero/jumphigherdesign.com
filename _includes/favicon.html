@@ -1,0 +1,12 @@
+{%- comment -%}
+  Generate the favicon set at https://realfavicongenerator.net/ from the
+  isotype (assets/img/isotype.png). Drop the generated files in
+  assets/favicon/ and adjust the paths below to match.
+  NOTE: the detailed grasshopper may not read well at 16–32px — see README.
+{%- endcomment -%}
+<link rel="icon" type="image/png" href="{{ '/assets/favicon/favicon-96x96.png' | relative_url }}" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon/favicon.svg' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
+<meta name="apple-mobile-web-app-title" content="Jump Higher">
+<link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | relative_url }}">

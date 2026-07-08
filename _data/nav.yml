@@ -1,0 +1,9 @@
+- title: Inicio
+  url: /
+- title: Servicios
+  url: /servicios/
+- title: Acerca de
+  url: /acerca/
+- title: Contacto
+  url: /contacto/
+  cta: true

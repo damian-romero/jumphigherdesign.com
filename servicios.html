@@ -1,0 +1,103 @@
+---
+permalink: /servicios/
+title: "Servicios"
+description: "Sitios web estáticos, plataformas Odoo, identidad visual y mantenimiento. Alcance definido y precios fijos antes de iniciar."
+---
+
+{% include page-hero.html eyebrow="Servicios" title="¿Qué necesita tu negocio?" lead="Dos tipos de sitio web, identidad visual y mantenimiento flexible. Todo con alcance definido y precio fijo antes de iniciar." %}
+
+<section class="section">
+  <div class="container">
+    <div class="sh">
+      <span class="eyebrow">Plataformas</span>
+      <h2>Elige tu solución</h2>
+      <p>Un sitio estático presenta tu negocio: es rápido, seguro y casi no requiere mantenimiento. Un sitio con Odoo además lo opera: tienda, inventario, clientes. No son etapas de un mismo camino — son decisiones para tipos de negocio distintos.</p>
+    </div>
+
+    <div class="compare" style="margin-bottom:3rem">
+      <div class="cmp-col cmp-col--lt">
+        <div class="cmp-lbl">Sitio estático</div>
+        <h4>Presencia profesional a tu medida</h4>
+        <div class="cmp-mini" style="background:var(--mar-dk)" aria-hidden="true">
+          <div class="cmp-mini-bar" style="background:var(--piz)"></div>
+          <div class="cmp-mini-body"><div style="height:4px;border-radius:2px;background:var(--bdr)"></div><div style="height:4px;border-radius:2px;background:var(--bdr);width:60%"></div><div style="height:4px;border-radius:2px;background:var(--bdr);width:80%"></div></div>
+        </div>
+        <div class="cmp-feat">Diseño 100% personalizado, sin límites</div>
+        <div class="cmp-feat">Formularios de contacto y WhatsApp</div>
+        <div class="cmp-feat">Hosting sin costo mensual</div>
+        <div class="cmp-feat">Rápido, seguro, casi sin mantenimiento</div>
+        <div class="cmp-feat">Integraciones externas (Calendly, Maps, etc.)</div>
+        <div class="cmp-verdict">
+          <strong>Ideal para</strong>
+          Servicios, despachos, consultores, portafolios y negocios que no necesitan tienda ni CRM.
+        </div>
+      </div>
+      <div class="cmp-col cmp-col--dk">
+        <div class="cmp-lbl">Sitio web con Odoo</div>
+        <h4>Operación completa integrada</h4>
+        <div class="cmp-mini" style="background:var(--piz-lt)" aria-hidden="true">
+          <div class="cmp-mini-bar" style="background:var(--ter)"></div>
+          <div class="cmp-mini-body"><div style="height:4px;border-radius:2px;background:rgba(255,255,255,.15)"></div><div style="height:4px;border-radius:2px;background:rgba(255,255,255,.1);width:60%"></div><div style="height:4px;border-radius:2px;background:rgba(255,255,255,.12);width:80%"></div></div>
+        </div>
+        <div class="cmp-feat">Tienda en línea con inventario integrado</div>
+        <div class="cmp-feat">CRM y seguimiento de clientes</div>
+        <div class="cmp-feat">Email marketing integrado</div>
+        <div class="cmp-feat">Edita tu propio contenido sin técnico</div>
+        <div class="cmp-feat">Cotizaciones, ventas y facturación</div>
+        <div class="cmp-verdict">
+          <strong>Ideal para</strong>
+          Tiendas en línea, distribuidoras, empresas con equipo de ventas o inventario activo.
+        </div>
+      </div>
+    </div>
+
+    <div class="sh">
+      <span class="eyebrow">Sitio estático</span>
+      <h2>Tu negocio, presentado como merece</h2>
+      <p>Recibes un sitio diseñado a la medida — no una plantilla —, publicado en tu dominio y listo para recibir clientes. El código y el contenido son 100% tuyos: si un día decides irte, te llevas todo.</p>
+    </div>
+    <div class="grid-3" style="margin-bottom:2rem">
+      {% include pricing-grid.html tiers=site.data.services.static_pricing %}
+    </div>
+
+    <hr class="divider">
+
+    <div class="sh">
+      <span class="eyebrow">Plataforma Odoo</span>
+      <h2>Sitio y operación en un solo lugar</h2>
+      <p>Recibes tu sitio funcionando sobre Odoo, configurado para tu operación — tienda, inventario, CRM según tu paquete — y capacitación para que tu equipo lo administre sin depender de un técnico.</p>
+    </div>
+    <div class="grid-3">
+      {% include pricing-grid.html tiers=site.data.services.odoo_pricing %}
+    </div>
+
+    <hr class="divider">
+
+    <div class="sh">
+      <span class="eyebrow">Add-on</span>
+      <h2>Identidad visual</h2>
+      <p>Diseñada por nuestro asociado especialista. Todos los paquetes incluyen archivos fuente y derechos completos de uso comercial.</p>
+    </div>
+    <div class="grid-4">
+      {% include pricing-grid.html tiers=site.data.services.branding_pricing %}
+    </div>
+
+    <hr class="divider">
+
+    <div class="sh">
+      <span class="eyebrow">Después de la entrega</span>
+      <h2>Mantenimiento: tú decides quién lo lleva</h2>
+      <p>Nuestro objetivo es que no nos necesites para cada cambio pequeño. Por eso hay dos caminos — y ninguno tiene plazos forzosos.</p>
+    </div>
+    <div class="grid-2" style="margin-bottom:2.5rem">
+      {% include pricing-grid.html tiers=site.data.services.maintenance_paths %}
+    </div>
+
+    <div class="infobox infobox--ter">
+      <h5>Costos adicionales que conviene conocer desde el inicio</h5>
+      <p>Estos conceptos no están incluidos en los paquetes y se cotizan por escrito antes de iniciar: compra del dominio (pago anual al registrador; el dominio queda a tu nombre), configuración de dominio ($500 MXN), configuración de correo empresarial ($400 MXN), páginas extra en sitios estáticos ($800 MXN c/u) y la suscripción de Odoo Online (se paga directamente a Odoo). Todos los precios son + IVA. Sin sorpresas: si algo no está en tu cotización, no se cobra.</p>
+    </div>
+  </div>
+</section>
+
+{% include cta-banner.html title="¿No sabes cuál elegir?" text="Cuéntanos tu caso — orientamos sin compromiso." btn_label="Hablar con un consultor →" btn_href="/contacto/" %}

@@ -1,0 +1,50 @@
+---
+permalink: /acerca/
+title: "Acerca de"
+description: "Un consultor directo, sin intermediarios. Experiencia real en Odoo y desarrollo web para PyMEs mexicanas."
+---
+
+{% include page-hero.html eyebrow="Acerca de" title="Un consultor directo, sin intermediarios." lead="Cuando contratas Jump Higher Design, tratas con el consultor — no con un equipo de soporte ni un asistente." %}
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:3rem;align-items:start">
+      <div>
+        <img src="{{ '/assets/img/perfil.jpg' | relative_url }}"
+             alt="Retrato del consultor de Jump Higher Design"
+             width="280" height="280" loading="lazy"
+             style="width:100%;max-width:280px;aspect-ratio:1;object-fit:cover;border-radius:var(--rad);display:block">
+      </div>
+      <div>
+        <span class="eyebrow">El consultor</span>
+        <h2 style="color:var(--piz);margin-bottom:1rem">Experiencia real. Precios justos.</h2>
+        <p style="color:var(--mut);line-height:1.75;margin-bottom:1rem;font-size:.95rem">Con experiencia directa en Odoo y desarrollo web, Jump Higher Design nació de una convicción simple: las pequeñas y medianas empresas mexicanas merecen acceso a herramientas digitales profesionales sin pagar precios de agencia grande ni lidiar con tecnicismos que no les corresponde entender.</p>
+        <p style="color:var(--mut);line-height:1.75;font-size:.95rem">Trabajamos con un equipo pequeño y selecto — incluyendo un diseñador gráfico especializado en identidad visual — para entregar proyectos completos de principio a fin.</p>
+
+        <hr class="divider">
+
+        <h3 style="color:var(--piz);margin-bottom:1.25rem">Herramientas con las que trabajamos</h3>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+          <span class="tag tag-static">GitHub</span>
+          <span class="tag tag-odoo">Odoo</span>
+          <span class="tag" style="background:rgba(44,62,80,.08);color:var(--piz)">Jekyll</span>
+          <span class="tag" style="background:rgba(44,62,80,.08);color:var(--piz)">Netlify</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="sh">
+      <span class="eyebrow">Valores</span>
+      <h2>Cómo trabajamos</h2>
+    </div>
+    <div>
+      {% for v in site.data.values %}
+      <div class="val-item"><div><h4>{{ v.title }}</h4><p>{{ v.desc }}</p></div></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include cta-banner.html title="¿Platicamos?" text="La primera conversación es sin costo y sin compromiso." btn_label="Escribir →" btn_href="/contacto/" %}

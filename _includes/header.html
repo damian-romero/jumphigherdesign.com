@@ -1,0 +1,21 @@
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="{{ '/' | relative_url }}" aria-label="Jump Higher Design — inicio">
+      <span class="nav__logo-text">Jump Higher Design</span>
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      {%- assign cur = page.url | remove: 'index.html' -%}
+      {%- for item in site.data.nav -%}
+        <a href="{{ item.url | relative_url }}"
+           class="{% if item.cta %}nav__cta{% endif %}{% if cur == item.url %} active{% endif %}"
+           {% if cur == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor -%}
+    </nav>
+    <button class="nav__burger" id="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">&#9776;</button>
+  </div>
+  <nav class="nav__mobile" id="nav-mobile" aria-label="Navegación móvil">
+    {%- for item in site.data.nav -%}
+      <a href="{{ item.url | relative_url }}"{% if cur == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+    {%- endfor -%}
+  </nav>
+</header>

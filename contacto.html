@@ -1,0 +1,48 @@
+---
+permalink: /contacto/
+title: "Contacto"
+description: "Cuéntanos qué necesita tu negocio. Respondemos en menos de 48 horas hábiles. La primera consulta es sin costo."
+---
+
+{% include page-hero.html eyebrow="Contacto" title="Cuéntanos qué necesita tu negocio." lead="Respondemos en menos de 48 horas hábiles. La primera consulta es sin costo." %}
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:3.5rem;align-items:start">
+      <div>
+        <span class="eyebrow">Información</span>
+        <h2 style="color:var(--piz);margin-bottom:1rem">Jump Higher Design</h2>
+        <p style="font-size:.9rem;color:var(--mut);margin-bottom:1.75rem;line-height:1.7">Consultoría digital para pequeñas y medianas empresas en México. Sitios web profesionales, Odoo e identidad visual.</p>
+
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.75rem">
+          <div>
+            <span style="font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);display:block;margin-bottom:.2rem">Correo</span>
+            <a href="mailto:{{ site.email }}" style="font-size:.9rem;color:var(--ter-tx);text-decoration:underline">{{ site.email }}</a>
+          </div>
+          <div>
+            <span style="font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);display:block;margin-bottom:.2rem">WhatsApp</span>
+            <a href="https://wa.me/{{ site.whatsapp }}?text={{ site.whatsapp_msg | url_encode }}" style="font-size:.9rem;color:var(--ter-tx);text-decoration:underline">Escríbenos por WhatsApp</a>
+          </div>
+          <div>
+            <span style="font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);display:block;margin-bottom:.2rem">Tiempo de respuesta</span>
+            <span style="font-size:.9rem">48 horas hábiles o menos</span>
+          </div>
+        </div>
+
+        <div class="infobox infobox--sal">
+          <h5>Primera consulta sin costo</h5>
+          <p>Platicamos de tu proyecto antes de cotizar. Sin compromiso ni presión de venta.</p>
+        </div>
+        <div class="infobox infobox--ter">
+          <h5>Pago por proyecto</h5>
+          <p>50% al inicio para reservar agenda. 50% a la entrega. Sin pagos sorpresa.</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="eyebrow">Formulario de contacto</span>
+        {% include contact-form.html %}
+      </div>
+    </div>
+  </div>
+</section>

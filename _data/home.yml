@@ -1,0 +1,37 @@
+# Home: "Lo que hacemos" cards
+services_glance:
+  - tag: Estático
+    tag_class: static
+    accent: "var(--ter)"
+    title: Sitio web estático
+    desc: "Diseño 100% personalizado. Rápido, seguro y de bajo mantenimiento. Ideal para servicios y presencia profesional."
+  - tag: Odoo
+    tag_class: odoo
+    accent: "var(--sal)"
+    title: Sitio web con Odoo
+    desc: "Plataforma completa con tienda, CRM, inventario y email marketing. El cliente edita su propio contenido."
+  - tag: Diseño
+    tag_class: brand
+    accent: "var(--piz)"
+    title: Identidad visual
+    desc: "Logotipo, paleta, tipografía y guía de marca. Desde $2,500 MXN con derechos completos de uso comercial."
+  - tag: Soporte
+    tag_class: static
+    accent: "rgba(125,155,118,.5)"
+    title: Mantenimiento
+    desc: "Te enseñamos a manejar tu sitio, o lo manejamos por ti desde $500 MXN/mes. Sin plazos forzosos."
+
+# Home: "Por qué nosotros" dark cards
+why_us:
+  - title: Precio fijo
+    accent: "var(--ter)"
+    desc: "Lo que se cotiza es lo que se cobra. Alcance escrito y aprobado antes de iniciar."
+  - title: Experiencia real en Odoo
+    accent: "var(--sal)"
+    desc: "No aprendemos con tu proyecto. Conocemos la plataforma a fondo desde adentro."
+  - title: Tu autonomía primero
+    accent: "var(--ter)"
+    desc: "El objetivo siempre es que no nos necesites para cada cambio pequeño."
+  - title: Trato directo
+    accent: "var(--sal)"
+    desc: "Hablas con el consultor, no con un equipo de soporte ni un asistente."

@@ -1,0 +1,17 @@
+/* Brand design tokens — mirrors #jhd-design-tokens in the brand system.
+   Single source of truth for color/type/system values. */
+:root{
+  --piz:#2C3E50;--piz-dk:#1e2d3d;--piz-lt:#3d5166;
+  --mar:#F5F2EE;--mar-dk:#E8E5DF;
+  --ter:#C4785A;--ter-lt:#d4896b;
+  --sal:#7D9B76;--sal-lt:#a2bb9c;
+  /* Accessible text variants (WCAG AA ≥4.5:1). Use for TEXT; keep the
+     originals for decorative fills. --ter-tx/--sal-tx pass on --wht and --mar;
+     --ter-brt passes on --piz. Extends the brand system — sync there if kept. */
+  --ter-tx:#9E5637;--sal-tx:#567350;--ter-brt:#DE9B7F;
+  --car:#3A3A3A;--bdr:#D8D5CF;--mut:#6B6862;--wht:#ffffff;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"DM Sans",system-ui,sans-serif;
+  --rad:6px;--shd:0 2px 12px rgba(44,62,80,.08);--shd-h:0 6px 24px rgba(44,62,80,.14);
+  --mw:1080px;--pad:clamp(1.25rem,5vw,2.5rem);
+}

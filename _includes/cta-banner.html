@@ -1,0 +1,11 @@
+{%- comment -%} Params: title, text, btn_label, btn_href, btn2_label, btn2_href {%- endcomment -%}
+<div class="cta-banner">
+  <div class="container">
+    <h2>{{ include.title }}</h2>
+    {% if include.text %}<p>{{ include.text }}</p>{% endif %}
+    <div class="btn-group">
+      <a class="btn btn-white" href="{{ include.btn_href | default: '/contacto/' | relative_url }}">{{ include.btn_label | default: 'Contactar →' }}</a>
+      {% if include.btn2_label %}<a class="btn btn-outline" href="{{ include.btn2_href | relative_url }}">{{ include.btn2_label }}</a>{% endif %}
+    </div>
+  </div>
+</div>

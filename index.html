@@ -1,0 +1,108 @@
+---
+permalink: /
+title: "Jump Higher Design — Lleva tu negocio más alto"
+description: "Consultoría digital para PyMEs mexicanas: sitios web profesionales, plataformas Odoo e identidad visual. Alcance fijo y precios claros."
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div>
+      <span class="eyebrow">Consultoría digital para PyMEs mexicanas</span>
+      <h1 style="margin-bottom:1.25rem">Tu negocio merece una presencia digital a su altura.</h1>
+      <p class="lead" style="color:rgba(245,242,238,.72)">Sitios web profesionales, plataformas Odoo e identidad visual — con alcances fijos, precios claros y sin tecnicismos.</p>
+      <div class="btn-group" style="margin-top:2rem">
+        <a class="btn btn-primary" href="{{ '/servicios/' | relative_url }}">Ver servicios</a>
+        <a class="btn btn-outline" href="{{ '/contacto/' | relative_url }}">Contactar</a>
+      </div>
+      <p class="hero__tagline">"Lleva tu negocio más alto."</p>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <img src="{{ '/assets/img/logo_squared_dark.svg' | relative_url }}" alt="" width="340" height="335" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- Servicios en un vistazo -->
+<section class="section">
+  <div class="container">
+    <div class="sh">
+      <span class="eyebrow">Servicios</span>
+      <h2>Lo que hacemos</h2>
+      <p>Dos plataformas, un equipo especializado, un solo punto de contacto.</p>
+    </div>
+    <div class="grid-4">
+      {% for card in site.data.home.services_glance %}
+      <div class="card">
+        <div class="card-accent" style="background:{{ card.accent }}"></div>
+        <span class="tag tag-{{ card.tag_class }}">{{ card.tag }}</span>
+        <h3>{{ card.title }}</h3>
+        <p style="font-size:.85rem;color:var(--mut);margin-top:.5rem;line-height:1.6">{{ card.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{%- comment -%}
+  Showcase preview — UNPUBLISHED until real portfolio exists (see showcase.html front matter).
+  To restore: re-add the nav entry in _data/nav.yml, set published: true on showcase.html,
+  restore the footer link, and uncomment this section.
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="sh">
+      <span class="eyebrow">Showcase</span>
+      <h2>Mira cómo se ve nuestro trabajo</h2>
+      <p>Ejemplos del tipo de soluciones que construimos. Filtra por plataforma y compara la misma empresa como sitio estático y con Odoo.</p>
+    </div>
+    <div class="grid-3" style="margin-bottom:2rem">
+      <div class="sc-card">
+        <div class="sc-preview" style="background:var(--mar)">
+          <div class="sc-nav" style="background:var(--piz)"><div class="sc-dot" style="background:var(--ter)"></div><div class="sc-dot" style="background:var(--sal)"></div><div class="sc-dot" style="background:rgba(255,255,255,.2)"></div></div>
+          <div class="sc-body"><div class="sc-hero" style="background:var(--ter);opacity:.22"></div><div class="sc-ln" style="background:var(--bdr);width:80%"></div><div class="sc-ln" style="background:var(--bdr);width:55%"></div><div class="sc-ln" style="background:var(--bdr);width:70%"></div></div>
+        </div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Despacho de abogados</h4><p>Landing, servicios, contacto. Formulario y WhatsApp integrados.</p></div>
+      </div>
+      <div class="sc-card">
+        <div class="sc-preview" style="background:var(--piz)">
+          <div class="sc-nav" style="background:rgba(255,255,255,.05)"><div class="sc-dot" style="background:var(--ter-lt)"></div><div class="sc-dot" style="background:var(--sal)"></div><div class="sc-dot" style="background:rgba(255,255,255,.15)"></div></div>
+          <div class="sc-body"><div class="sc-hero" style="background:rgba(196,120,90,.35)"></div><div class="sc-ln" style="background:rgba(255,255,255,.12);width:80%"></div><div class="sc-ln" style="background:rgba(255,255,255,.08);width:55%"></div><div class="sc-ln" style="background:rgba(255,255,255,.10);width:70%"></div></div>
+        </div>
+        <div class="sc-info"><span class="tag tag-odoo">Odoo</span><h4>Tienda de ropa en línea</h4><p>Catálogo, carrito, pagos y email marketing integrados.</p></div>
+      </div>
+      <div class="sc-card">
+        <div class="sc-preview" style="background:#1a1a2e">
+          <div class="sc-nav" style="background:rgba(255,255,255,.04)"><div class="sc-dot" style="background:var(--sal)"></div><div class="sc-dot" style="background:var(--ter)"></div><div class="sc-dot" style="background:rgba(255,255,255,.15)"></div></div>
+          <div class="sc-body"><div class="sc-hero" style="background:var(--sal);opacity:.25"></div><div class="sc-ln" style="background:rgba(255,255,255,.12);width:80%"></div><div class="sc-ln" style="background:rgba(255,255,255,.08);width:55%"></div></div>
+        </div>
+        <div class="sc-info"><span class="tag tag-static">Estático</span><h4>Portafolio creativo</h4><p>Galería, blog y Calendly integrado. Diseño oscuro personalizado.</p></div>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn btn-primary" href="{{ '/showcase/' | relative_url }}">Ver showcase completo →</a>
+    </div>
+  </div>
+</section>
+{%- endcomment -%}
+
+<!-- Por qué JHD -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="sh sh--w" style="margin-bottom:2.5rem">
+      <span class="eyebrow" style="color:var(--sal-lt)">Por qué nosotros</span>
+      <h2>Sin rodeos. Sin sorpresas.</h2>
+    </div>
+    <div class="grid-4">
+      {% for card in site.data.home.why_us %}
+      <div class="card card--dark">
+        <div class="card-accent" style="background:{{ card.accent }}"></div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include cta-banner.html title="¿Quieres empezar?" text="Cuéntanos qué necesita tu negocio. La primera conversación es sin costo y sin compromiso." btn_label="Contactar →" btn_href="/contacto/" %}
