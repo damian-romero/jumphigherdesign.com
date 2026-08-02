@@ -1,7 +1,7 @@
 # Jump Higher Design — sitio (Jekyll)
 
 Sitio multipágina hecho desde cero (sin tema). Hospedaje: Netlify. Dominio: Squarespace (DNS). Correo: Hostinger (info@).
--.Ah se me olvida esto
+-.
 ## Correr en local
 ```bash
 bundle install
