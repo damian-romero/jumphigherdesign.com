@@ -2,8 +2,7 @@
 
 Sitio multipágina hecho desde cero (sin tema). Hospedaje: Netlify. Dominio: Squarespace (DNS). Correo: Hostinger (info@).
 TEST CHANGES
-
-
+-.
 ## Correr en local
 ```bash
 bundle install
